@@ -1,0 +1,135 @@
+/*设定盒子模型*/
+*
+{
+    box-sizing: border-box;
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+$min-width: 320px 360px 375px 384px 400px 412px 414px 480px 768px 1024px;
+$font-size: 20px;
+$fontSreen: $font-size/375px;
+
+html
+{
+    font-size: $font-size;
+}
+/*屏幕适配*/
+@each $w in $min-width {
+    @media only screen and (min-width:$w)
+    {
+        html
+        {
+            font-size:  $fontSreen * $w !important;
+        }
+    }
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td
+{
+    margin: 0;
+    padding: 0;
+}
+body,
+input
+{
+    font-family: Helvetica,Microsoft Yahei;
+
+    -webkit-font-smoothing: antiaoverflowliased;
+}
+html,
+body,
+section
+{
+    overflow-y: hidden;
+
+    height: 100%;
+    margin: 0;
+
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: none;
+}
+select,
+input,
+img,
+textarea
+{
+    border: 0 none;
+}
+input,
+textarea
+{
+    font: inherit;
+    line-height: normal;
+    user-select: all;
+
+    outline: none;
+    background-color: transparent;
+
+    -webkit-touch-callout: initial;
+}
+textarea
+{
+    width: 100%;
+
+    resize: none;
+}
+ol,
+ul,
+li
+{
+    list-style: none;
+}
+a,
+a:visited,
+a:hover
+{
+    text-decoration: none;
+    color: #1d2121;
+}
+input::-webkit-input-speech-button
+{
+    display: none;
+}
+input[type='search']::-webkit-search-cancel-button
+{
+    -webkit-appearance: none;
+}
+[v-cloak]
+{
+    display: none;
+}
+.picker-items {
+    font-size: 1rem;
+}
+
+.picker-modal {
+    background: #ffffff;
+}

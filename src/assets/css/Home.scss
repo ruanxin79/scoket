@@ -1,0 +1,95 @@
+.mint-cell{
+	padding: 1rem 1rem 0 1rem;
+}
+.my-gallery{
+	overflow: hidden;
+	padding-right: 1rem;
+	margin-left: 7.5rem;
+	text-align:justify ;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	a{
+		height: inherit;
+	}
+	img{
+		width: 100%;
+		height: inherit;
+	}
+}
+.icon{
+	width: 100%;
+	padding-left: 7.5rem;
+	padding-right: 1rem;
+	margin-top: 10px;
+	height: 20px;
+	span{
+		color: #7b7b7b;
+		padding:1px 1rem 0 2px;
+		font-size: 1.2rem;
+	}
+	.mint-cell-title{
+		width: 100%;
+		text-align: right;
+	}
+	.mint-cell-wrapper{
+		height: 20px;
+	}
+	img{
+		vertical-align: top;
+		padding:1px .5rem;
+	}
+}
+.mint-cell-label{
+	position: absolute;
+	left: 7rem;
+	bottom: 1rem;
+}
+.reply{
+	text-align: left;
+	background-color:#f5f5f5;
+	margin: 12px 1rem 12px 7.5rem; 
+	padding-left: 10px;
+	font-size: 1.6rem;
+	font-weight: lighter;
+	.top{
+		padding-top:.5rem;
+		line-height: 2rem;
+		margin-right: .5rem;
+		border-bottom: 1px solid #ececec;
+	}
+	.bottom p{
+		padding: .3rem 0 .2rem 0;
+	}
+}
+.mint-cell-wrapper,.mint-cell:last-child{
+	background-image:none !important;
+	position: relative;
+	padding: 0 !important;
+}
+.mint-cell-text{
+	vertical-align:top !important;
+	font-size: 1.7rem !important;
+	line-height: 4rem;
+	padding-left: .8rem;
+	font-weight: 600 !important;
+}
+.mint-cell-value{
+	position: absolute;
+	margin-left: 70px;
+	z-index: 99;
+	//margin-left: 7rem;
+	text-align: left;
+	bottom:1rem;
+	color:#ececec !important;
+}
+.contenText{
+	width: 100%;
+	padding:0 1rem 0 7.5rem;
+
+	text-align: left;
+	font-size: 1.6rem;
+	margin-bottom: .5rem;
+}
+
+
+
